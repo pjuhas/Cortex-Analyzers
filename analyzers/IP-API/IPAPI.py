@@ -13,7 +13,7 @@ class BitcoinAbuse(Analyzer):
         level = 'info'
         namespace = 'IP-API'
         predicate = 'Country'
-        value = "0"
+        value = "None"
         if raw["country"] != "":
             value = "{}".format(raw["country"])
         taxonomies.append(self.build_taxonomy(level, namespace, predicate, value))
