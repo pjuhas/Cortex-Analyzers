@@ -1,0 +1,11 @@
+{
+  "name": "KapeIPParser",
+  "version": "1.0",
+  "author": "Peter Juhas",
+  "url": "https://github.com/pjuhas/thehive-analyzers",
+  "license": "None",
+  "description": "Parse IP address from Kape logs",
+  "dataTypeList": ["file"],
+  "baseConfig": "KapeIPParser",
+  "command": "KapeIPParser/KapeIPParser.py"
+}
