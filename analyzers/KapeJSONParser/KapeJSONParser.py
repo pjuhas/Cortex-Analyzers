@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 import json
-
 from cortexutils.analyzer import Analyzer
-import iocextract
 
 
 class KapeJSONParser(Analyzer):
