@@ -5,7 +5,7 @@
   "url": "https://github.com/pjuhas/thehive-analyzers",
   "license": "None",
   "description": "Analyze IP address or domain via Kaspersky Threat Intelligence Portal",
-  "dataTypeList": ["ip", "domain"],
+  "dataTypeList": ["ip", "domain", "hash"],
   "baseConfig": "KasperskyTIP",
   "configurationItems": [
     {
