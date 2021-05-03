@@ -1,3 +1,4 @@
 cortexutils
 requests
 iocextract
+json

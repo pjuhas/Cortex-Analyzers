@@ -6,11 +6,7 @@ import iocextract
 class KapeIPParser(Analyzer):
     def __init__(self):
         Analyzer.__init__(self)
-
-        # filename of the observable
         self.filename = self.getParam('attachment.name', 'noname.ext')
-
-        # filepath to the observable, looks like /tmp/cortex-4224850437865873235-datafile
         self.filepath = self.getParam('file', None, 'File is missing')
 
     def run(self):
@@ -24,9 +20,7 @@ class KapeIPParser(Analyzer):
                             address.append(x[2].split(":")[0])
                 file.close()
                 address = list(set(address))
-                result = {"count": len(address), "address": []}
-                for x in address:
-                    result["address"].append({"IP": x})
+                result = {"count": len(address), "addresses": address}
                 self.report(result if len(result) > 0 else {})
             except Exception as e:
                 self.unexpectedError(e)
