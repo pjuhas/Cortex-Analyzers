@@ -34,7 +34,7 @@ Update your Cortex *application.conf*.
 ## ANALYZERS
 analyzer {
 ...
-"/opt/cortex-analyzers/analyzers"
+"/opt/Cortex-Analyzers/analyzers"
 }
 ...
 ```
