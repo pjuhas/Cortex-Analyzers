@@ -4,7 +4,7 @@
   "author": "Peter Juhas",
   "url": "https://github.com/pjuhas/thehive-analyzers",
   "license": "AGPL-V3",
-  "description": "Parse JSON files from Kape logs",
+  "description": "Parse JSON file from Kape logs",
   "dataTypeList": ["file"],
   "baseConfig": "KapeJSONParser",
   "command": "KapeJSONParser/KapeJSONParser.py"

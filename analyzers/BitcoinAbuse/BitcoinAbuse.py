@@ -13,7 +13,7 @@ class BitcoinAbuse(Analyzer):
         taxonomies = []
         level = 'info'
         namespace = 'Bitcoin Abuse'
-        predicate = 'Count'
+        predicate = 'Report count'
         value = "0"
         if raw["count"] != 0:
             value = "{}".format(raw["count"])
@@ -28,8 +28,7 @@ class BitcoinAbuse(Analyzer):
                 s = requests.Session()
                 response_details = s.get('https://www.bitcoinabuse.com/api/reports/check?address={}&api_token={}'
                                          .format(data, self.test_key))
-
-                if response_details.status_code == 200 or response_details.status_code == 201:
+                if response_details.status_code == 200:
                     result = response_details.json()
                     self.report(result if len(result) > 0 else {})
                 else:

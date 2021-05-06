@@ -31,7 +31,9 @@ class KapeJSONParser(Analyzer):
         level = "info"
         namespace = "KapeJSONParser"
         predicate = ""
-        value = "Success"
+        value = ""
+        if len(raw["data"]) != 0:
+            value = "Success"
         taxonomies.append(self.build_taxonomy(level, namespace, predicate, value))
         return {"taxonomies": taxonomies}
 

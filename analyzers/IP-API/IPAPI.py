@@ -27,8 +27,7 @@ class BitcoinAbuse(Analyzer):
                 s = requests.Session()
                 response_details = s.get('http://ip-api.com/json/{}'
                                          .format(data))
-
-                if response_details.status_code == 200 or response_details.status_code == 201:
+                if response_details.status_code == 200:
                     result = response_details.json()
                     self.report(result if len(result) > 0 else {})
                 else:

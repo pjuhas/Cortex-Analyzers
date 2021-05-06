@@ -20,7 +20,7 @@ class KapeIPParser(Analyzer):
                             address.append(x[2].split(":")[0])
                 file.close()
                 address = list(set(address))
-                result = {"count": len(address), "addresses": address}
+                result = {"count": len(address), "data": address}
                 self.report(result if len(result) > 0 else {})
             except Exception as e:
                 self.unexpectedError(e)

@@ -4,7 +4,7 @@
   "author": "Peter Juhas",
   "url": "https://github.com/pjuhas/thehive-analyzers",
   "license": "AGPL-V3",
-  "description": "Analyze IP address or domain via Kaspersky Threat Intelligence Portal",
+  "description": "Analyze IP address, domain or hash via Kaspersky Threat Intelligence Portal",
   "dataTypeList": ["ip", "domain", "hash"],
   "baseConfig": "KasperskyTIP",
   "configurationItems": [
