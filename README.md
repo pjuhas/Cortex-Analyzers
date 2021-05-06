@@ -15,7 +15,7 @@ This repository contains 5 updated analyzers which can be used in Cortex.
 Clone this repository to Cortex directory of your installation.
 ```
 cd /opt
-sudo git clone https://github.com/pjuhas/cortex-analyzers.git
+sudo git clone https://github.com/pjuhas/Cortex-Analyzers.git
 ```
 You may need to install Cortex prerequisites in order to successfully install and use Cortex analyzers. 
 ```
@@ -25,7 +25,7 @@ sudo pip install -U pip setuptools && sudo pip3 install -U pip setuptools
 
 Install all modules used in Cortex analyzers located in *requirements.txt*. 
 ```
-for I in $(find cortex-analyzers -name 'requirements.txt'); do sudo -H pip3 install -r $I || true; done
+for I in $(find Cortex-Analyzers -name 'requirements.txt'); do sudo -H pip3 install -r $I || true; done
 ```
 
 Update your Cortex *application.conf*.
