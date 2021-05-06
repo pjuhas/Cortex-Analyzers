@@ -83,8 +83,8 @@ Returns basic informations about IP address, domain or hash.
 
 #### Requirements
 Provide your API key from [KasperskyThreadIntelligencePortal](https://opentip.kaspersky.com) as a value of the key parameter.
----
 
+---
 ### TheHive Project
 - [TheHive Project](https://github.com/TheHive-Project/TheHive)
 - [Cortex](https://github.com/TheHive-Project/Cortex)
