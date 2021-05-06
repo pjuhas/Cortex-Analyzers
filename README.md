@@ -40,6 +40,8 @@ analyzer {
 ```
 Restart Cortex and you should see installed Cortex analyzers under *Organization &#8594; Analyzers*. 
 
+---
+
 ### BitcoinAbuse
 Check Bitcoin address against Bitcoin Abuse database. 
 
