@@ -19,7 +19,7 @@ sudo git clone https://github.com/pjuhas/cortex-analyzers.git
 ```
 You may need to install Cortex prerequisites in order to successfully install and use Cortex analyzers. 
 ```
-sudo apt-get install -y --no-install-recommends python-pip python2.7-dev python3-pip python3-dev ssdeep libfuzzy-dev libfuzzy2 libimage-exiftool-perl libmagic1 build-essential git libssl-dev
+sudo apt-get install -y --no-install-recommends python-pip python3-pip python3-dev ssdeep libfuzzy-dev libfuzzy2 libmagic1 build-essential libssl-dev
 sudo pip install -U pip setuptools && sudo pip3 install -U pip setuptools
 ```
 
