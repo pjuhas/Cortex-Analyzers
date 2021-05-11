@@ -1,9 +1,9 @@
-#Cortex Analyzers
+# Cortex Analyzers
 Repository used for developing analyzers for Cortex.
 
 This repository contains 5 updated analyzers which can be used in Cortex. 
 
-##Analyzers
+## Analyzers
 
 - [BitcoinAbuse](#bitcoinabuse)
 - [CheckPhish](#checkphish)
@@ -15,7 +15,7 @@ This repository contains 5 updated analyzers which can be used in Cortex.
 - [ThreadMiner](#threadminer)
 - [Verifalia](#verifalia)
 
-##Installation Guide
+## Installation Guide
 Clone this repository to Cortex directory of your installation.
 ```
 cd /opt
@@ -46,26 +46,26 @@ Restart Cortex and you should see installed Cortex analyzers under *Organization
 
 ---
 
-###BitcoinAbuse
+### BitcoinAbuse
 Check Bitcoin address against Bitcoin Abuse database. 
 
 Returns count of reports and description of reports.
-####Requirements
+#### Requirements
 Provide your API key from [BitcoinAbuse](https://www.bitcoinabuse.com) as a value of the key parameter.
 
 ---
 
-###CheckPhish
+### CheckPhish
 Detailed analysis of URL via CheckPhish.
 
 Returns URL to analysis and screenshot of site.
 
-####Requirements
+#### Requirements
 Provide your API key from [CheckPhish](https://checkphish.ai) as a value of the key parameter.
 
 ---
 
-###IP-API
+### IP-API
 Checks IP address or domain using [ip-api.com](https://ip-api.com). 
 
 Returns geolocation informations of IP address or domain.
@@ -74,17 +74,17 @@ No configuration is required. It can be used out of the box.
 
 ---
 
-###IPAPI
+### IPAPI
 Checks IP address using ipapi.com.
 
 Returns geolocation informations of IP address.
 
-####Requirements
+#### Requirements
 Provide your API key from [IPAPI](https://ipapi.com) as a value of the key parameter.
 
 ---
 
-###KapeIPParser (personal use)
+### KapeIPParser (personal use)
 Parse established connections from [Kape](https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape) logs. 
 ```
 .\kape.exe --tsource <source> --tdest <destination> --tflush --target !BasicCollection --msource <destination> --mdest <destination> --mflush --module Get-NetworkConnection
@@ -95,7 +95,7 @@ No configuration is required. It can be used out of the box.
 
 ---
 
-###KapeJSONParser (personal use)
+### KapeJSONParser (personal use)
 Parse process list from [Kape](https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape) logs.
 
 ```
@@ -108,33 +108,33 @@ No configuration is required. It can be used out of the box.
 
 ---
 
-###KasperskyThreadIntelligencePortal
+### KasperskyThreadIntelligencePortal
 Analyze IP address, domain or hash via Kaspersky Threat Intelligence Portal. 
 
 Returns basic informations about IP address, domain or hash.
 
-####Requirements
+#### Requirements
 Provide your API key from [KasperskyThreadIntelligencePortal](https://opentip.kaspersky.com) as a value of the key parameter.
 
 ---
-###ThreadMiner
+### ThreadMiner
 Returns WHOIS information of IP address or domain if available using [ThreadMiner](https://threatminer.org).
 
 No configuration is required. It can be used out of the box.
 
 ---
 
-###Verifalia
+### Verifalia
 Submit e-mail address for analysis via Verifalia.
 
 Returns basic informations about analyzed e-mail address.
 
-####Requirements
+#### Requirements
 Provide your username as a value of the login parameter and password as a value of the password parameter from [Verifalia](https://verifalia.com).
 
 
 ---
-###TheHive Project
+### TheHive Project
 - [TheHive Project](https://github.com/TheHive-Project/TheHive)
 - [Cortex](https://github.com/TheHive-Project/Cortex)
 
