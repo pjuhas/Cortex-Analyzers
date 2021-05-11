@@ -1,0 +1,38 @@
+<div class="panel panel-info" ng-if="::content.data" ng-init="recent_limit = 20">
+    <div class="panel-heading">
+        <strong>Summary of ESTABLISHED connections</strong>
+        <span class="pull-right" ng-show="::content.data.length > 20">
+            <a href ng-show="recent_limit===20"
+               ng-click="recent_limit = undefined">Show All ({{::content.data.length}})</a>
+            <a href ng-show="!recent_limit" ng-click="recent_limit = 20">Show less</a>
+        </span>
+    </div>
+    <div class="panel-body">
+        <table class="table table-hover">
+            <tr>
+                <th>Data</th>
+                <th>Result</th>
+            </tr>
+            <tr ng-repeat="r in content.data | limitTo:recent_limit">
+                <td>IP address</td>
+                <td>{{r}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- General error  -->
+<div class="panel panel-danger" ng-if="!success">
+    <div class="panel-heading">
+        <strong>{{artifact.data | fang}}</strong>
+    </div>
+    <div class="panel-body">
+        <dl class="dl-horizontal" ng-if="content.errorMessage">
+            <dt>
+                <i class="fa fa-warning"></i> urlscan.io:
+            </dt>
+            <dd class="wrap">{{content.errorMessage}}</dd>
+        </dl>
+    </div>
+</div>
+

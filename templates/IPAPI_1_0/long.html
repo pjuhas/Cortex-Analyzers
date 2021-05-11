@@ -1,0 +1,17 @@
+<div class="panel panel-info" ng-if="success">
+    <div class="panel-heading">
+        Geolocation of <strong>{{(artifact.data || artifact.attachment.name) | fang}}</strong>
+    </div>
+    <div class="panel-body">
+        {{[content.continent_name, content.country_name, content.city, content.zip].join(' / ')}}
+    </div>
+</div>
+
+<div class="panel panel-danger" ng-if="!success">
+    <div class="panel-heading">
+        <strong>{{(artifact.data || artifact.attachment.name) | fang}}</strong>
+    </div>
+    <div class="panel-body">
+        {{content.errorMessage}}
+    </div>
+</div>

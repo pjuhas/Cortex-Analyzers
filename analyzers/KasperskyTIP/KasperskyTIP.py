@@ -11,11 +11,17 @@ class KasperskyTIP(Analyzer):
     def summary(self, raw):
         taxonomies = []
         level = 'info'
-        namespace = 'Kaspersky Threat Intelligence Portal'
+        namespace = 'KTIP'
         predicate = 'Status'
         value = "None"
-        if raw["Zone"]:
+        if "Zone" in raw:
             value = "{}".format(raw["Zone"])
+        if value == "Green":
+            level = "safe"
+        elif value == "Yellow":
+            level = "suspicious"
+        elif value == "Red":
+            level = "malicious"
         taxonomies.append(self.build_taxonomy(level, namespace, predicate, value))
         return {'taxonomies': taxonomies}
 

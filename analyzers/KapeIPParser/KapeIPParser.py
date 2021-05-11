@@ -33,7 +33,7 @@ class KapeIPParser(Analyzer):
         namespace = "KapeIPParser"
         predicate = "Different IPs"
         value = "0"
-        if raw["count"] != 0:
+        if "count" in raw:
             value = "{}".format(raw["count"])
 
         taxonomies.append(self.build_taxonomy(level, namespace, predicate, value))

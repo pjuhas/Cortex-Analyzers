@@ -1,20 +1,20 @@
 {
-  "name": "BitcoinAbuse",
+  "name": "IPAPI",
   "version": "1.0",
   "author": "Peter Juhas",
   "url": "https://github.com/pjuhas/Cortex-Analyzers",
   "license": "AGPL-V3",
-  "description": "Check Bitcoin address against Bitcoin Abuse database",
-  "dataTypeList": ["string"],
-  "baseConfig": "BitcoinAbuse",
+  "description": "Check IP address using ipapi.com",
+  "dataTypeList": ["ip"],
+  "baseConfig": "IPAPI",
   "configurationItems": [
     {
       "name": "key",
-      "description": "API key for Bitcoin Abuse",
+      "description": "API key for IPAPI",
       "type": "string",
       "multi": false,
       "required": true
     }
   ],
-  "command": "BitcoinAbuse/BitcoinAbuse.py"
+  "command": "IPAPI/IPAPI.py"
 }

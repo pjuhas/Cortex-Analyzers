@@ -10,13 +10,23 @@ class BitcoinAbuse(Analyzer):
         self.test_key = self.get_param('config.key', None, 'Missing Bitcoin Abuse API key')
 
     def summary(self, raw):
+        color = 0
         taxonomies = []
         level = 'info'
         namespace = 'Bitcoin Abuse'
         predicate = 'Report count'
         value = "0"
-        if raw["count"] != 0:
+        if "count" in raw:
             value = "{}".format(raw["count"])
+            color = raw["count"]
+
+        if color == 0:
+            level = "safe"
+        elif color < 5:
+            level = "suspicious"
+        elif color > 4:
+            level = "malicious"
+
         taxonomies.append(self.build_taxonomy(level, namespace, predicate, value))
         return {'taxonomies': taxonomies}
 
