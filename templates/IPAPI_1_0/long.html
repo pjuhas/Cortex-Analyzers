@@ -3,7 +3,24 @@
         Geolocation of <strong>{{(artifact.data || artifact.attachment.name) | fang}}</strong>
     </div>
     <div class="panel-body">
-        {{[content.continent_name, content.country_name, content.city, content.zip].join(' / ')}}
+        <table class="table table-hover">
+            <tr>
+                <th>Continent</th>
+                <td>{{content.continent_name | ellipsis:130}}</td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td>{{content.country_name | ellipsis:130}}</td>
+            </tr>
+            <tr>
+                <th>City</th>
+                <td>{{content.city | ellipsis:130}}</td>
+            </tr>
+            <tr>
+                <th>ZIP</th>
+                <td>{{content.zip | ellipsis:130}}</td>
+            </tr>
+        </table>
     </div>
 </div>
 
