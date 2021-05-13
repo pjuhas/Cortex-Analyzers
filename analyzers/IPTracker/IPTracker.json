@@ -1,20 +1,20 @@
 {
-  "name": "IPAPI",
+  "name": "IPTracker",
   "version": "1.0",
   "author": "Peter Juhas",
   "url": "https://github.com/pjuhas/Cortex-Analyzers",
   "license": "AGPL-V3",
-  "description": "Check IP address using ipapi.com",
+  "description": "Check IP address using IPTracker",
   "dataTypeList": ["ip"],
-  "baseConfig": "IPAPI",
+  "baseConfig": "IPTracker",
   "configurationItems": [
     {
       "name": "key",
-      "description": "API key for IPAPI",
+      "description": "API key for IPTracker",
       "type": "string",
       "multi": false,
       "required": true
     }
   ],
-  "command": "IPAPI/IPAPI.py"
+  "command": "IPTracker/IPTracker.py"
 }

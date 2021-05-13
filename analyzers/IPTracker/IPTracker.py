@@ -3,16 +3,16 @@ import requests
 from cortexutils.analyzer import Analyzer
 
 
-class IPAPI(Analyzer):
+class IPTracker(Analyzer):
 
     def __init__(self):
         Analyzer.__init__(self)
-        self.test_key = self.get_param('config.key', None, 'Missing IPAPI API key')
+        self.test_key = self.get_param('config.key', None, 'Missing IPTracker API key')
 
     def summary(self, raw):
         taxonomies = []
         level = 'info'
-        namespace = 'IPAPI'
+        namespace = 'IPTracker'
         predicate = 'Country'
         value = "None"
         if "country_code" in raw:
@@ -31,7 +31,7 @@ class IPAPI(Analyzer):
                     result = response_details.json()
                     self.report(result if len(result) > 0 else {})
                 else:
-                    self.error('Failed to query IPAPI details. Status_code {}'.format(response_details.status_code))
+                    self.error('Failed to query IPTracker details. Status_code {}'.format(response_details.status_code))
             except Exception as e:
                 self.unexpectedError(e)
         else:
@@ -39,4 +39,4 @@ class IPAPI(Analyzer):
 
 
 if __name__ == '__main__':
-    IPAPI().run()
+    IPTracker().run()

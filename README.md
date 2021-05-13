@@ -8,7 +8,7 @@ This repository contains 9 updated analyzers which can be used in Cortex.
 - [BitcoinAbuse](#bitcoinabuse)
 - [CheckPhish](#checkphish)
 - [IP-API](#ip-api)
-- [IPAPI](#ipapi)
+- [IPTracker](#iptracker)
 - [KapeIPParser (personal use)](#kapeipparser-personal-use)
 - [KapeJSONParser (personal use)](#kapejsonparser-personal-use)
 - [KasperskyThreadIntelligencePortal](#kasperskythreadintelligenceportal)
@@ -74,13 +74,13 @@ No configuration is required. It can be used out of the box.
 
 ---
 
-### IPAPI
-Checks IP address using ipapi.com.
+### IPTracker
+Checks IP address using IPTracker.
 
 Returns geolocation informations of IP address.
 
 #### Requirements
-Provide your API key from [IPAPI](https://ipapi.com) as a value of the key parameter.
+Provide your API key from [IPTracker](https://www.iptrackeronline.com) as a value of the key parameter.
 
 ---
 
