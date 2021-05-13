@@ -87,7 +87,7 @@ Provide your API key from [IPTracker](https://www.iptrackeronline.com) as a valu
 ### KapeIPParser (personal use)
 Parse established connections from [Kape](https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape) logs. 
 ```
-.\kape.exe --tsource <source> --tdest <destination> --tflush --target !BasicCollection --msource <destination> --mdest <destination> --mflush --module Get-NetworkConnection
+.\kape.exe --tsource <source> --tdest <destination> --tflush --target !BasicCollection --msource <source> --mdest <destination> --mflush --module Get-NetworkConnection
 ```
 Returns IP addresses of established connections.
 
@@ -99,7 +99,7 @@ No configuration is required. It can be used out of the box.
 Parse process list from [Kape](https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape) logs.
 
 ```
-.\kape.exe --tsource <source> --tdest <destination> --tflush --target !BasicCollection --msource <destination> --mdest <destination> --mflush --module Get-Process
+.\kape.exe --tsource <source> --tdest <destination> --tflush --target !BasicCollection --msource <source> --mdest <destination> --mflush --module Get-Process
 ```
 
 Returns abbreviated informations about processes.
