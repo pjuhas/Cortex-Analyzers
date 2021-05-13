@@ -12,7 +12,7 @@ This repository contains 9 updated analyzers which can be used in Cortex.
 - [KapeIPParser (personal use)](#kapeipparser-personal-use)
 - [KapeJSONParser (personal use)](#kapejsonparser-personal-use)
 - [KasperskyThreadIntelligencePortal](#kasperskythreadintelligenceportal)
-- [ThreadMiner](#threadminer)
+- [ThreatMiner](#threatminer)
 - [Verifalia](#verifalia)
 
 ## Installation Guide
@@ -117,8 +117,8 @@ Returns basic informations about IP address, domain or hash.
 Provide your API key from [KasperskyThreadIntelligencePortal](https://opentip.kaspersky.com) as a value of the key parameter.
 
 ---
-### ThreadMiner
-Returns WHOIS information of IP address or domain if available using [ThreadMiner](https://threatminer.org).
+### ThreatMiner
+Returns WHOIS information of IP address or domain if available using [ThreatMiner](https://threatminer.org).
 
 No configuration is required. It can be used out of the box.
 

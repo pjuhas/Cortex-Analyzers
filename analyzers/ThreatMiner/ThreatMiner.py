@@ -3,7 +3,7 @@ import requests
 from cortexutils.analyzer import Analyzer
 
 
-class ThreadMiner(Analyzer):
+class ThreatMiner(Analyzer):
 
     def __init__(self):
         Analyzer.__init__(self)
@@ -11,7 +11,7 @@ class ThreadMiner(Analyzer):
     def summary(self, raw):
         taxonomies = []
         level = 'suspicious'
-        namespace = 'ThreadMiner'
+        namespace = 'ThreatMiner'
         predicate = ':'
         value = "Not found."
         if len(raw["results"]) != 0:
@@ -32,7 +32,7 @@ class ThreadMiner(Analyzer):
                     self.report(result if len(result) > 0 else {})
                 else:
                     self.error(
-                        'Failed to query ThreadMiner details. Status_code {}'.format(response_details.status_code))
+                        'Failed to query ThreatMiner details. Status_code {}'.format(response_details.status_code))
             except Exception as e:
                 self.unexpectedError(e)
         elif self.data_type == 'ip':
@@ -45,7 +45,7 @@ class ThreadMiner(Analyzer):
                     self.report(result if len(result) > 0 else {})
                 else:
                     self.error(
-                        'Failed to query ThreadMiner details. Status_code {}'.format(response_details.status_code))
+                        'Failed to query ThreatMiner details. Status_code {}'.format(response_details.status_code))
             except Exception as e:
                 self.unexpectedError(e)
 
@@ -54,4 +54,4 @@ class ThreadMiner(Analyzer):
 
 
 if __name__ == '__main__':
-    ThreadMiner().run()
+    ThreatMiner().run()
