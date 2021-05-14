@@ -5,7 +5,7 @@
   "url": "https://github.com/pjuhas/Cortex-Analyzers",
   "license": "AGPL-V3",
   "description": "Check Bitcoin address against Bitcoin Abuse database",
-  "dataTypeList": ["string"],
+  "dataTypeList": ["btc_address"],
   "baseConfig": "BitcoinAbuse",
   "configurationItems": [
     {

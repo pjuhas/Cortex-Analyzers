@@ -32,7 +32,7 @@ class BitcoinAbuse(Analyzer):
 
     def run(self):
         Analyzer.run(self)
-        if self.data_type == 'string':
+        if self.data_type == 'btc_address':
             try:
                 data = self.get_data()
                 s = requests.Session()
