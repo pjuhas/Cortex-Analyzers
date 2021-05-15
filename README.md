@@ -9,8 +9,8 @@ This repository contains 9 updated analyzers which can be used in Cortex.
 - [CheckPhish](#checkphish)
 - [IP-API](#ip-api)
 - [IPTracker](#iptracker)
-- [KapeIPParser (personal use)](#kapeipparser-personal-use)
-- [KapeJSONParser (personal use)](#kapejsonparser-personal-use)
+- [KapeIPParser](#kapeipparser)
+- [KapeJSONParser](#kapejsonparser)
 - [KasperskyThreadIntelligencePortal](#kasperskythreadintelligenceportal)
 - [ThreatMiner](#threatminer)
 - [Verifalia](#verifalia)
@@ -84,7 +84,7 @@ Provide your API key from [IPTracker](https://www.iptrackeronline.com) as a valu
 
 ---
 
-### KapeIPParser (personal use)
+### KapeIPParser
 Parse established connections from [Kape](https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape) logs. 
 ```
 .\kape.exe --tsource <source> --tdest <destination> --tflush --target !BasicCollection --msource <source> --mdest <destination> --mflush --module Get-NetworkConnection
@@ -95,7 +95,7 @@ No configuration is required. It can be used out of the box.
 
 ---
 
-### KapeJSONParser (personal use)
+### KapeJSONParser
 Parse process list from [Kape](https://www.kroll.com/en/insights/publications/cyber/kroll-artifact-parser-extractor-kape) logs.
 
 ```
