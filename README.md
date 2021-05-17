@@ -1,7 +1,7 @@
 # Cortex Analyzers
 Repository used for developing analyzers for Cortex.
 
-This repository contains 9 updated analyzers which can be used in Cortex. 
+This repository contains 10 updated analyzers which can be used in Cortex. 
 
 ## Analyzers
 
