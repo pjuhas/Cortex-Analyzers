@@ -14,6 +14,7 @@ This repository contains 9 updated analyzers which can be used in Cortex.
 - [KasperskyThreadIntelligencePortal](#kasperskythreadintelligenceportal)
 - [ThreatMiner](#threatminer)
 - [Verifalia](#verifalia)
+- [W3SA-UPJS](#w3sa-upjs)
 
 ## Installation Guide
 Clone this repository to Cortex directory of your installation.
@@ -132,8 +133,18 @@ Returns basic informations about analyzed e-mail address.
 #### Requirements
 Provide your username as a value of the login parameter and password as a value of the password parameter from [Verifalia](https://verifalia.com).
 
+---
+### W3SA-UPJS
+Checks if IP address is part of university network in Pavol Jozef Šafárik University.
+
+Returns MAC address, name of the server, VLAN and many more..
+
+#### Requirements
+
+Provide your username as a value of the login parameter and password as a value of the password parameter from [W3SA](https://w3sa.ciakt.upjs.sk/login?came_from=%2Fadmin%2F).
 
 ---
+
 ### TheHive Project
 - [TheHive Project](https://github.com/TheHive-Project/TheHive)
 - [Cortex](https://github.com/TheHive-Project/Cortex)
