@@ -11,7 +11,7 @@ This repository contains 10 updated analyzers which can be used in Cortex.
 - [IPTracker](#iptracker)
 - [KapeIPParser](#kapeipparser)
 - [KapeJSONParser](#kapejsonparser)
-- [KasperskyThreadIntelligencePortal](#kasperskythreadintelligenceportal)
+- [KasperskyThreatIntelligencePortal](#kasperskythreatintelligenceportal)
 - [ThreatMiner](#threatminer)
 - [Verifalia](#verifalia)
 - [W3SA-UPJS](#w3sa-upjs)
@@ -109,13 +109,13 @@ No configuration is required. It can be used out of the box.
 
 ---
 
-### KasperskyThreadIntelligencePortal
+### KasperskyThreatIntelligencePortal
 Analyze IP address, domain or hash via Kaspersky Threat Intelligence Portal. 
 
 Returns basic informations about IP address, domain or hash.
 
 #### Requirements
-Provide your API key from [KasperskyThreadIntelligencePortal](https://opentip.kaspersky.com) as a value of the key parameter.
+Provide your API key from [KasperskyThreatIntelligencePortal](https://opentip.kaspersky.com) as a value of the key parameter.
 
 ---
 ### ThreatMiner
