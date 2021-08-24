@@ -1,0 +1,27 @@
+{
+  "name": "W3SA-UPJS",
+  "version": "1.0",
+  "author": "Peter Juhas",
+  "url": "https://github.com/pjuhas/Cortex-Analyzers",
+  "license": "AGPL-V3",
+  "description": "Check IP address against W3SA-UPJS database",
+  "dataTypeList": ["ip"],
+  "baseConfig": "W3SA-UPJS",
+  "configurationItems": [
+    {
+      "name": "login",
+      "description": "Username for W3SA-UPJS",
+      "type": "string",
+      "multi": false,
+      "required": true
+    },
+    {
+      "name": "password",
+      "description": "Password for W3SA-UPJS",
+      "type": "string",
+      "multi": false,
+      "required": true
+    }
+  ],
+  "command": "W3SA-UPJS/W3SA-UPJS.py"
+}
